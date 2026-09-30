@@ -80,6 +80,15 @@ p.body + p.body{margin-top:1.3em}
 .wr .tag{font-family:var(--serif);letter-spacing:.32em;font-size:.8rem;margin-top:2.4rem;color:var(--blush)}
 @media (max-width:760px){.wr .wrap{grid-template-columns:1fr}.arch{max-width:340px;margin:0 auto}}
 .ph-missing::after{content:attr(data-label);font-family:var(--hand);font-size:1.8rem;color:var(--blush);text-align:center;padding:1rem}
+ 
+ 
+.wpol{position:relative;width:min(100%,400px);margin:0 auto;background:#fbf8f2;padding:3.2% 3.2% 15%;rotate:-4deg;box-shadow:0 30px 60px -18px rgba(0,0,0,.6),0 2px 8px rgba(0,0,0,.25)}
+.wpol .ph{aspect-ratio:4/5;overflow:hidden;background:var(--beige);display:grid;place-items:center}
+.wpol img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.wpol:hover img{transform:scale(1.05)}
+.wpol figcaption{position:absolute;left:0;right:0;bottom:3.5%;text-align:center;font-family:var(--hand);font-size:clamp(1.5rem,3vw,2rem);color:var(--plum);line-height:1}
+.wpol .ph-missing::after{color:var(--plum)}
+@media (max-width:760px){.wpol{width:min(82%,340px)}}
 
 /* ---------- FRIEND ---------- */
 .fr{background:var(--blush);background:linear-gradient(#e9cabf,#e3bfb4);z-index:2}
@@ -161,7 +170,7 @@ p.body + p.body{margin-top:1.3em}
 <section class="s wr" id="wardrobe">
   <div class="wr-mark" aria-hidden="true">THE WARDROBE REFRESH</div>
   <div class="wrap">
-    <div class="arch rv"><div class="in-arch" id="wrFrame"><img src="tosyn-2.jpg" alt="The Wardrobe Refresh"></div></div>
+    <figure class="wpol rv"><div class="ph" id="wrFrame"><img data-img="wardrobe" alt="Tosyn, founder of The Wardrobe Refresh"></div><figcaption>the wardrobe refresh</figcaption></figure>
     <div>
       <h2 class="rv split">And then there’s the woman behind <em>The Wardrobe Refresh.</em></h2>
       <p class="body rv d1">Tosyn doesn’t just love fashion. She is building something of her own: luxury women’s clothing, chosen with intention, for women who want to look beautiful and feel it too.</p>
